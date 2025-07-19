@@ -1,0 +1,85 @@
+ .about-container {
+  padding: 80px 20px;
+  background-color: #121212;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.about-content {
+  max-width: 1000px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00adb5;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #00adb5;
+}
+
+.about-text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.skills-section h3 {
+  font-size: 1.5rem;
+  color: #00adb5;
+  margin-bottom: 10px;
+}
+
+.skill-groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-pill {
+  background-color: #1f1f1f;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #fff;
+  transition: background-color 0.3s;
+  cursor: default;
+}
+
+.skill-pill:hover {
+  background-color: #00adb5;
+}
+
+.download-btn {
+  margin-top: 30px;
+  display: inline-block;
+  background-color: #00adb5;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #007c82;
+}
