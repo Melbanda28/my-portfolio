@@ -9,19 +9,19 @@ import carWashImg from '../assets/mobile-car-wash.png';
 const projects = [
   {
     title: "Weather App",
-    description: "A simple weather forecast app showing real-time data from a public API.",
-    image: imozuluImg, // Replace with real image if available
+    description: "A simple weather forecast app showing real-time data from a public API. Click on the Project Name to see how it works.",
+    image: imozuluImg,
     link: "https://imozuluapp.netlify.app"  
   },
   {
     title: "Mobile Car Wash App",
-    description: "A responsive booking system for mobile car wash services built with React.",
+    description: "A responsive booking system for mobile car wash services built with React. Click on the Project Name to see how it works.",
     image: carWashImg,
     link: "https://mobilecar-wash.netlify.app/"
   },
   {
     title: "React Weather App",
-    description: "A React-based weather application using OpenWeatherMap API with stylish UI.",
+    description: "A React-based weather application using OpenWeatherMap API with stylish UI. Click on the Project Name to see how it works.",
     image: reactAppImg,
     link: "https://react-weather-namhlanje.netlify.app"
   }

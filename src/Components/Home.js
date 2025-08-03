@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import profileImg from '../assets/profile.jpg';
 import { TypeAnimation } from 'react-type-animation';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram} from 'react-icons/fa';
 
 export default function Home() {
   return (
@@ -14,11 +14,12 @@ export default function Home() {
         background: 'linear-gradient(145deg, #121212, #1a1a1a)',
         color: '#fff',
         display: 'flex',
+        flexDirection:'column',
         alignItems: 'center',
-        justifyContent: 'space-between',
-        flexWrap: 'wrap',
-        padding: '0 10%',
-        gap: '2rem',
+        justifyContent: 'center',
+        marginTop:'70px',
+        padding: '0px 10%',
+    
       }}
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
@@ -26,8 +27,34 @@ export default function Home() {
       transition={{ duration: 0.6 }}
     >
      
-      <div style={{ flex: '1 1 400px' }}>
-        <h1 style={{ fontSize: '3rem', color: '#00adb5', marginBottom: '0.5rem' }}>
+      <div style={{ 
+        display:'flex',
+        flexDirection:'column',
+        alignItems:'center',
+        textAlign:'center',
+        maxWidth:'700px',  
+        }}
+        >
+       <img
+       src={profileImg}
+       alt="Mellania"
+       style={{
+        width: '220px',
+        height:'220px',
+        borderRadius:'50%',
+        border:'3px solid #00adb5',
+        boxShadow:'0 0 30px rgba (0, 173, 181, 0.4)',
+        marginBottom:'1.5 rem',
+        objectFit:'cover',
+       }}
+       />
+        
+        <h1 style={{ 
+          fontSize: '3rem', 
+          color: '#00adb5',
+           marginBottom: '0.5rem'
+           }}
+           >
           Hi, I'm Mellania
         </h1>
 
@@ -40,11 +67,22 @@ export default function Home() {
           ]}
           wrapper="span"
           speed={50}
-          style={{ fontSize: '1.5rem', color: '#ffd369', display: 'inline-block' }}
+          style={{
+           fontSize: '1.5rem', 
+           color: '#ffd369', 
+           display: 'inline-block' 
+          }}
           repeat={Infinity}
         />
 
-        <p style={{ color: '#ccc', marginTop: '1rem', maxWidth: '500px', lineHeight: '1.6' }}>
+        <p 
+        style={{ 
+          color: '#ccc', 
+          marginTop: '1rem', 
+          maxWidth: '500px', 
+          lineHeight: '1.6' 
+          }}
+          >
            A creative and detail-driven web developer passionate about building sleek,
             responsive websites that blend design and functionality. 
             With a strong foundation in modern web technologies and a love for clean code,
@@ -52,7 +90,14 @@ export default function Home() {
         </p>
 
        
-        <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem' }}>
+        <div style={{ 
+          marginTop: '2rem', 
+          display: 'flex', 
+          gap: '1rem',
+          flexWrap:'wrap',
+          marginBottom:'1.5 rem',
+          }}
+          >
           <a
   href="/Mellania-CV.pdf"
   download
@@ -85,28 +130,16 @@ export default function Home() {
         </div>
 
      
-        <div style={{ marginTop: '1.5rem', display: 'flex', gap: '1rem' }}>
-          <a href="https://github.com/Melbanda28" target="_blank" rel="noreferrer">
-            <FaGithub size={28} color="#fff" />
+        <div style={{display: 'flex', marginTop:'30px', gap: '1rem' }}>
+          <a href="https://www.instagram.com/melan_mel_b" target="_blank" rel="noreferrer">
+            <FaInstagram size={28} color="#E4405F" />
           </a>
+          <a href="https://github.com/Melbanda28" target="_blank" rel="noreferrer">
+            <FaGithub size={28} color="#ffffff" /> </a>
           <a href="https://linkedin.com/in/melbanda" target="_blank" rel="noreferrer">
-            <FaLinkedin size={28} color="#fff" />
+            <FaLinkedin size={28} color="#0077b5" />
           </a>
         </div>
-      </div>
-
-      
-      <div style={{ flex: '1 1 300px', textAlign: 'center' }}>
-        <img
-          src={profileImg}
-          alt="Mellania"
-          style={{
-            width: '280px',
-            borderRadius: '50%',
-            border: '3px solid #00adb5',
-            boxShadow: '0 0 30px rgba(0, 173, 181, 0.4)',
-          }}
-        />
       </div>
     </motion.div>
   );
