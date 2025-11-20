@@ -60,9 +60,9 @@ export default function Home() {
 
         <TypeAnimation
           sequence={[
-            'Front-end Developer',
+            'Software Engineer',
             2000,
-            'React Developer',
+            'Front-end Developer',
             2000,
           ]}
           wrapper="span"
